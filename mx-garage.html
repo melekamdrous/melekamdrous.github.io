@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MX Garage — Case Study · Malik Amdrous</title>
+<meta name="description" content="UX case study: designing a trusted marketplace for used car parts in Tunisia.">
+<meta property="og:image" content="images/og.jpg">
+<link rel="preload" href="fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<nav class="nav dark" aria-label="Main">
+  <a href="index.html" class="logo"><svg viewBox="0 0 64 64" aria-hidden="true"><path class="lc-head" d="M8 10 L24 22 Q32 19.5 40 22 L56 10 L56 38 Q56 57 32 57 Q8 57 8 38 Z"/><rect class="lc-eye" x="18" y="34" width="9" height="4" rx="2"/><rect class="lc-eye" x="37" y="34" width="9" height="4" rx="2"/></svg>malik<small>Design engineer</small></a>
+  <div class="nav-links">
+    <a href="index.html#work">← All work</a>
+    <a href="index.html#contact" class="btn-pill">Let's talk →</a>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="glow"></div><div class="grid-bg"></div>
+  <div class="wrap">
+    <div class="cs-hero-grid">
+      <div>
+        <div class="cs-tags"><span>Product design</span><span>Design engineering</span><span>UX research</span><span>Brand</span></div>
+        <h1>MX<br><span class="outline">Garage</span></h1>
+        <p class="sub">A trusted marketplace for used car parts in Tunisia — designed by someone who lived the problem as a drifting enthusiast.</p>
+        <div class="meta">
+          <div><small>Type</small><b>University project</b></div>
+          <div><small>Role</small><b>Solo, end to end</b></div>
+          <div><small>Platform</small><b>iOS app concept</b></div>
+          <div><small>Output</small><b>20+ screens</b></div>
+        </div>
+      </div>
+      <div class="hero-phones" aria-hidden="true">
+        <img src="images/mx/parts-front-dark.webp" alt="">
+        <img src="images/mx/home-dark.webp" alt="" style="object-fit:cover;object-position:top;aspect-ratio:780/1688">
+        <img src="images/mx/processing-dark.webp" alt="">
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="content">
+
+<!-- 01 Problem -->
+<section>
+  <div class="wrap reveal">
+    <div class="eyebrow">01 — The problem</div>
+    <h2 class="h2">Buying a used part shouldn't<br>feel like a gamble</h2>
+    <p class="lead">In Tunisia, most people get used car parts in one of two ways: through a mechanic, or by scrolling Facebook groups full of unstructured posts and phone numbers. Prices are opaque, availability is a guess, and there's no guarantee the part is genuine or in good condition.</p>
+    <div class="quote">
+      <p>I wasn't only the designer on this project — <strong>I was one of its users.</strong> I was preparing cars for drifting events, so every friction point in this system was one I had felt myself.</p>
+    </div>
+    <div class="statement">
+      <small>Problem statement</small>
+      <p>How might we make used car parts accessible, transparent and reliable — fighting price scams and messy online marketplaces — so buyers finally have a solution they can trust?</p>
+    </div>
+  </div>
+</section>
+
+<!-- Audit -->
+<section class="bg-white">
+  <div class="wrap">
+    <div class="split reveal">
+      <div>
+        <div class="eyebrow">02 — Audit</div>
+        <h2 class="h2">Where people buy parts today</h2>
+        <p class="lead">I audited the channels people actually use. The answer was mostly Facebook: brand groups, "used parts" pages and buy/sell posts.</p>
+        <ul class="check-list">
+          <li><strong>No structure</strong> — parts are posted as free text and photos, so you can't search by car or part.</li>
+          <li><strong>No price reference</strong> — the price comes by phone, and it changes with who's asking.</li>
+          <li><strong>No guarantee</strong> — condition and authenticity depend entirely on trusting a stranger.</li>
+        </ul>
+      </div>
+      <figure class="fig-narrow">
+        <img src="images/mx/research-audit.webp" alt="Screenshots of Facebook groups and pages where used car parts are sold in Tunisia" loading="lazy">
+        <figcaption>UX audit of Facebook groups and pages used to source parts.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Research -->
+<section>
+  <div class="wrap reveal">
+    <div class="eyebrow">03 — Research</div>
+    <h2 class="h2">Most buyers aren't experts —<br>and depend on someone who is</h2>
+    <p class="lead">I combined online research with interviews across the people involved in buying and fitting parts.</p>
+    <div class="stats">
+      <div class="stat"><b>90<span>%</span></b><p>of car users go to a mechanic for repairs</p></div>
+      <div class="stat"><b>70<span>%</span></b><p>of car connoisseurs are mechanics</p></div>
+      <div class="stat"><b>60<span>%</span></b><p>of car enthusiasts don't own a vehicle themselves</p></div>
+    </div>
+    <p class="source">Source: my online research and interviews for this project.</p>
+
+    <h3 class="h2" style="font-size:clamp(22px,2.6vw,30px);margin-top:3rem">Four people, one marketplace</h3>
+    <p class="lead">My users are mainly people who aren't car experts, but the platform also has to work for those who are.</p>
+    <div class="persona-grid">
+      <div class="persona">
+        <div class="persona-head"><div class="avatar" style="background:#E8F2FC">🚗</div><div><h4>The private owner</h4><div class="role">Low technical knowledge</div></div></div>
+        <p>Wants a repair done at a fair price. Often doesn't know the name of the part and relies on a mechanic's word.</p>
+        <div class="need"><b>Needs:</b> to find the right part without knowing its name</div>
+      </div>
+      <div class="persona">
+        <div class="persona-head"><div class="avatar" style="background:#E9F8EE">🔧</div><div><h4>The mechanic</h4><div class="role">Expert, buys often</div></div></div>
+        <p>Sources parts for customers every day through personal contacts and phone calls.</p>
+        <div class="need"><b>Needs:</b> reliable availability in one place</div>
+      </div>
+      <div class="persona">
+        <div class="persona-head"><div class="avatar" style="background:#FFF2E5">🏎️</div><div><h4>The drifter / enthusiast</h4><div class="role">Expert — my own profile</div></div></div>
+        <p>Hunts for specific parts for modified cars, often older models, and loses days finding them.</p>
+        <div class="need"><b>Needs:</b> to know quickly if a part exists and what it costs</div>
+      </div>
+      <div class="persona">
+        <div class="persona-head"><div class="avatar" style="background:#FCEEF4">🧭</div><div><h4>The first-time buyer</h4><div class="role">No automotive background</div></div></div>
+        <p>Has never bought a part and feels excluded from a market full of jargon and haggling.</p>
+        <div class="need"><b>Needs:</b> guidance and confidence to buy alone</div>
+      </div>
+    </div>
+
+    <h3 class="h2" style="font-size:clamp(22px,2.6vw,30px);margin-top:3rem">What users need</h3>
+    <ul class="check-list">
+      <li>Easy access to parts.</li>
+      <li>One shared marketplace to find the parts they need.</li>
+      <li>Authentic used parts, actually available, at reasonable prices.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Benchmark -->
+<section class="bg-white">
+  <div class="wrap reveal">
+    <div class="eyebrow">04 — Benchmark</div>
+    <h2 class="h2">The gap: nobody owns<br>used parts</h2>
+    <p class="lead">I benchmarked the two online platforms closest to the idea. Both sell <strong>new</strong> parts — neither solves trust in the used market, which is where most people buy.</p>
+    <div class="bench">
+      <div class="bench-card">
+        <h4>AutoPart</h4><div class="k">New parts, multiple brands</div>
+        <ul><li>Quality and availability assured</li><li>Search by car model and engine</li></ul>
+      </div>
+      <div class="bench-card">
+        <h4>Autos</h4><div class="k">New parts, multiple brands</div>
+        <ul><li>Quality and availability assured</li><li>Keeps a database of vehicle registration numbers</li></ul>
+      </div>
+      <div class="bench-card gap">
+        <h4>MX Garage</h4><div class="k">Used parts, verified</div>
+        <ul><li>Find parts from your plate number</li><li>Parts checked for condition and authenticity</li><li>Transparent price before you order</li></ul>
+      </div>
+    </div>
+    <figure class="fig-narrow" style="margin-top:2.5rem">
+      <img src="images/mx/research-matrix.webp" alt="Eisenhower matrix prioritising quality standards, AI fault detection, seller review systems and manufacturer partnerships" loading="lazy">
+      <figcaption>Prioritising the business roadmap with an Eisenhower matrix: quality standards and certification first; seller reviews, manufacturer partnerships and buyer education next.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Brand -->
+<section class="bg-black on-dark">
+  <div class="wrap">
+    <div class="split reveal">
+      <div>
+        <div class="eyebrow">05 — Brand</div>
+        <h2 class="h2">A mark that feels<br>like the garage</h2>
+        <p class="lead">I designed the MX Garage identity from scratch. The logo is a heavy, blocky monogram — like stamped metal. Teal sets it apart from the reds and yellows most automotive brands use, and reads as precise and modern.</p>
+      </div>
+      <figure class="fig-narrow">
+        <img src="images/mx/research-logo.webp" alt="MX Garage logo in black, white and teal variants" loading="lazy">
+        <figcaption>Logo variants on light and dark.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Themes -->
+<section>
+  <div class="wrap reveal">
+    <div class="eyebrow">06 — Two directions</div>
+    <h2 class="h2">Garage culture vs.<br>everyday clarity</h2>
+    <p class="lead">My first direction was dark and industrial — black, oily, like a real workshop — to make enthusiasts and mechanics feel at home. But most of my users aren't enthusiasts. So I designed a light version of the same screens and <strong>tested both with users</strong> to see which felt easier to read and more trustworthy.</p>
+    <div class="compare">
+      <div class="compare-col dark">
+        <h3>Direction A — Dark</h3>
+        <p>Built for the culture: high contrast, workshop mood.</p>
+        <div class="phones">
+          <figure class="phone"><div class="frame"><img src="images/mx/home-dark.webp" alt="Dark home screen with plate number input" loading="lazy"></div></figure>
+          <figure class="phone"><div class="frame"><img src="images/mx/order-dark.webp" alt="Dark order summary screen" loading="lazy"></div></figure>
+          <figure class="phone"><div class="frame"><img src="images/mx/delivery-dark.webp" alt="Dark delivery tracking screen" loading="lazy"></div></figure>
+        </div>
+      </div>
+      <div class="compare-col light">
+        <h3>Direction B — Light</h3>
+        <p>Built for everyone: softer, more neutral, same brand accent.</p>
+        <div class="phones">
+          <figure class="phone"><div class="frame"><img src="images/mx/home-light.webp" alt="Light home screen with plate number input" loading="lazy"></div></figure>
+          <figure class="phone"><div class="frame"><img src="images/mx/order-light.webp" alt="Light order summary screen" loading="lazy"></div></figure>
+          <figure class="phone"><div class="frame"><img src="images/mx/delivery-light.webp" alt="Light delivery tracking screen" loading="lazy"></div></figure>
+        </div>
+      </div>
+    </div>
+    <p class="source" style="margin-top:1rem">Both themes were designed end to end. Below, the browsing flow is shown in light and the order flow in dark. Long screens scroll inside the phone.</p>
+  </div>
+</section>
+
+<!-- Core flow -->
+<section class="bg-white">
+  <div class="wrap reveal">
+    <div class="eyebrow">07 — Core flow</div>
+    <h2 class="h2">Enter your plate.<br>See your car. Pick the part.</h2>
+    <p class="lead">Most buyers can't name the part they need, and part numbers mean nothing to them. So the search starts from something everyone knows: their <strong>Tunisian plate number</strong>. The app recognises the exact car — model, engine, fuel, year — and lets you swipe through its parts as pictures.</p>
+    <div class="phones" style="--cols:4">
+      <figure class="phone"><div class="frame"><img src="images/mx/home-light.webp" alt="Home screen asking for the plate number" loading="lazy"></div><figcaption><b>1</b>Enter your plate <span class="scroll-hint">(scroll)</span></figcaption></figure>
+      <figure class="phone"><div class="frame"><img src="images/mx/parts-rear-light.webp" alt="BMW E34 page with rear light selected in a parts carousel" loading="lazy"></div><figcaption><b>2</b>Your exact car</figcaption></figure>
+      <figure class="phone"><div class="frame"><img src="images/mx/parts-grille-light.webp" alt="Parts carousel showing the grille" loading="lazy"></div><figcaption><b>3</b>Swipe through parts</figcaption></figure>
+      <figure class="phone"><div class="frame"><img src="images/mx/parts-bumper-light.webp" alt="Parts carousel showing the bumper" loading="lazy"></div><figcaption><b>4</b>Choose the part</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- Order flow -->
+<section class="bg-black on-dark">
+  <div class="wrap reveal">
+    <div class="eyebrow">08 — Ordering</div>
+    <h2 class="h2">Honest about time,<br>clear about price</h2>
+    <p class="lead">A used part has to be found and checked before it ships, so delivery isn't instant. Instead of hiding that, the flow shows it: a full price breakdown before you confirm, then a <strong>two-stage tracker</strong> — "Search &amp; validation", then "Delivery" — with an estimated time and permission to close the app.</p>
+    <div class="phones" style="--cols:4">
+      <figure class="phone"><div class="frame"><img src="images/mx/order-dark.webp" alt="Order summary with part reference, delivery map, payment and invoice" loading="lazy"></div><figcaption><b>1</b>Review &amp; pay <span class="scroll-hint">(scroll)</span></figcaption></figure>
+      <figure class="phone"><div class="frame"><img src="images/mx/processing-dark.webp" alt="Order processing with estimated time of 3h30 to 4h" loading="lazy"></div><figcaption><b>2</b>Search &amp; validation</figcaption></figure>
+      <figure class="phone"><div class="frame"><img src="images/mx/delivery-dark.webp" alt="Order on its way with driver details and tracking map" loading="lazy"></div><figcaption><b>3</b>On its way</figcaption></figure>
+      <figure class="phone"><div class="frame"><img src="images/mx/thanks-dark.webp" alt="Thank you for your trust screen" loading="lazy"></div><figcaption><b>4</b>Received</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- System map -->
+<section class="blueprint on-dark">
+  <div class="wrap reveal">
+    <div class="eyebrow">09 — System map</div>
+    <h2 class="h2">Designed as a system,<br>not a set of screens.</h2>
+    <p class="lead">A marketplace for used parts only works if every link in the chain earns trust — from how the car is identified to how the part is checked and delivered. This is the system the screens sit on.</p>
+    <div class="sysmap" style="--sm-cols:4">
+      <div class="sm-col"><small>Input · Buyer</small><div class="sm-node"><b>Plate number</b><span>Everyone knows it — no part names needed</span></div><div class="sm-node future"><b>OBD fault code</b><span>The car flags the failing part</span></div></div>
+      <div class="sm-col"><small>Core · App</small><div class="sm-node key"><b>Vehicle lookup</b><span>Plate → model, engine, fuel, year</span></div><div class="sm-node"><b>Visual parts catalogue</b><span>Swipe parts on your own car</span></div><div class="sm-node"><b>Price breakdown</b><span>Part, delivery and total before paying</span></div></div>
+      <div class="sm-col"><small>Supply · Verification</small><div class="sm-node"><b>Sellers &amp; dealers</b><span>Used parts listed in one place</span></div><div class="sm-node key"><b>Search &amp; validation</b><span>Part located and checked before it ships</span></div><div class="sm-node future"><b>Seller reviews</b><span>Catch unfair pricing early</span></div></div>
+      <div class="sm-col"><small>Output · Delivery</small><div class="sm-node"><b>Two-stage tracker</b><span>Validation, then delivery, with an ETA</span></div><div class="sm-node"><b>Driver &amp; live map</b><span>Who is bringing it, and where</span></div><div class="sm-node key"><b>Trust</b><span>A fair price for a genuine part</span></div></div>
+    </div>
+    <div class="sm-legend"><span><i></i>Designed</span><span><i class="k"></i>Key decision</span><span><i class="f"></i>Roadmap</span></div>
+  </div>
+</section>
+
+<!-- Decisions -->
+<section class="bg-deep on-dark">
+  <div class="wrap reveal">
+    <div class="eyebrow">10 — Design decisions</div>
+    <h2 class="h2">The thinking behind<br>the screens</h2>
+    <div class="acc">
+      <details>
+        <summary>Why search by plate number instead of part name?</summary>
+        <div class="ans">Part names and reference numbers exclude exactly the people who need help most — private owners and first-time buyers. Everyone knows their plate. In my benchmark, one competitor already stored registration numbers, which showed the data link was realistic. Starting from the plate turns a technical search into something anyone can do.</div>
+      </details>
+      <details>
+        <summary>Why show parts as a visual carousel on the car?</summary>
+        <div class="ans">Recognising is easier than remembering. Seeing your own car with a headlight, a grille or a bumper you can swipe through lets you point at the problem instead of describing it. Experts still get the reference number and specs on the order screen.</div>
+      </details>
+      <details>
+        <summary>Why a two-stage tracker instead of a normal order status?</summary>
+        <div class="ans">Used parts have to be located and checked before they ship, so a typical "ordered → shipped" status would be misleading. Separating "Search &amp; validation" from "Delivery", with a time estimate and a line saying the user can close the app and will be notified, sets honest expectations — and trust is the whole product.</div>
+      </details>
+      <details>
+        <summary>Why design two full themes?</summary>
+        <div class="ans">The dark theme came from the culture I know — it felt right to me and to other enthusiasts. But I'm not my only user. Building a light version and testing both was a way to check my own bias against what non-expert buyers found readable and trustworthy.</div>
+      </details>
+      <details>
+        <summary>Where could it go next?</summary>
+        <div class="ans">Most modern cars have an on-board diagnostics (OBD) system that monitors the vehicle and generates fault codes. Connecting to it would let the car flag a failing part and open the right listing directly — moving from "search for a part" to "your car tells you what it needs".</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Learnings -->
+<section>
+  <div class="wrap reveal">
+    <div class="eyebrow">11 — Reflection</div>
+    <h2 class="h2">What I learned</h2>
+    <div class="learn-grid">
+      <div class="learn"><div class="ic">⚖️</div><h4>Identity vs. usability</h4><p>A look that resonates with a community isn't automatically the clearest for everyone. Testing two directions made that trade-off visible instead of a matter of taste.</p></div>
+      <div class="learn"><div class="ic">🎯</div><h4>Being a user is a head start, not the answer</h4><p>My drifting background gave me insights interviews alone wouldn't. It also gave me biases — research with other user types kept me honest.</p></div>
+      <div class="learn"><div class="ic">🤝</div><h4>Trust is designed in details</h4><p>Price breakdowns, time estimates and condition checks do more for a marketplace than any visual style.</p></div>
+      <div class="learn"><div class="ic">🧩</div><h4>Systems early</h4><p>Building the components alongside the first screens kept two themes and 20+ screens consistent.</p></div>
+    </div>
+    <h3 class="h2" style="font-size:22px;margin-top:3rem">Tools</h3>
+    <div class="tools"><span>Figma</span><span>Adobe Illustrator</span><span>Adobe Photoshop</span><span>Blender</span><span>AI image tools</span></div>
+  </div>
+</section>
+
+</main>
+
+<a href="balix.html" class="next">
+  <div><small>Next case study</small><strong>BALIX — Zaghouan National Park</strong></div>
+  <span class="arr" aria-hidden="true">→</span>
+</a>
+
+<footer>
+  <p>© 2026 Malik Amdrous</p>
+  <a href="index.html">← Back to portfolio</a>
+  <a href="mailto:melekamdrous@gmail.com">melekamdrous@gmail.com</a>
+</footer>
+<script src="main.js" defer></script>
+</body>
+</html>
