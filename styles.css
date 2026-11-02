@@ -193,6 +193,12 @@ figcaption::before { content: 'FIG — '; color: var(--accent); }
 .phone figcaption b { display: block; font: 500 12px var(--font-mono); color: var(--accent); }
 .on-dark .phone figcaption b { color: var(--butter); }
 .scroll-hint { opacity: .7; }
+.phone .frame.bare { border: 0; background: transparent; box-shadow: 0 22px 50px rgba(14,30,58,.22); border-radius: 30px; overflow: hidden; aspect-ratio: auto; }
+.compare-before { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: center; margin-top: 2rem; }
+.compare-before figure { margin: 0; }
+.compare-before .check-list li { color: var(--paper-dim); }
+.compare-before .check-list li strong { color: var(--paper); }
+.compare-before .check-list li::before { color: var(--butter); }
 
 .compare { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem, 3vw, 2rem); margin-top: 2.5rem; }
 .compare-col { padding: clamp(1.25rem, 2.5vw, 2rem); border: 1px solid var(--line-strong); }
@@ -278,7 +284,7 @@ footer a:hover { color: var(--butter); }
 @media (max-width: 960px) {
   .cs-hero-grid, .split { grid-template-columns: 1fr; }
   .hero-phones { max-width: 460px; margin: 0 auto; }
-  .compare, .bench { grid-template-columns: 1fr; }
+  .compare, .bench, .compare-before { grid-template-columns: 1fr; }
   .bench-card { border-right: 0; border-bottom: 1px solid var(--line); }
   .sysmap { grid-template-columns: 1fr 1fr; }
   .sm-col:nth-child(2n) { border-right: 0; }
